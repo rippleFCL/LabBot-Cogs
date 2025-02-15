@@ -323,10 +323,11 @@ class RoleWelcome(commands.Cog):
             await ctx.send("Welcomed users list was not cleared.")
 
     # Helpers
+    # NOTE: this is a gross ugly hack for ruff false positive on line 330
     async def send_welcome_message(
         self,
         guild: discord.Guild,
-        channel: discord.TextChannel,
+        channel: discord.TextChannel,  # noqa: W293 RUF100
         member: discord.abc.User,
     ):
         """Send welcome message"""
