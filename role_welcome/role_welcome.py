@@ -323,7 +323,6 @@ class RoleWelcome(commands.Cog):
             await ctx.send("Welcomed users list was not cleared.")
 
     # Helpers
-
     async def send_welcome_message(
         self,
         guild: discord.Guild,
